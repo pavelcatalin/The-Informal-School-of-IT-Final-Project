@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=MuseoModerno:wght@100;600&family=Patua+One&family=Permanent+Marker&family=Roboto:wght@500&family=Rubik+Mono+One&family=Rubik:wght@500&family=Ubuntu:wght@500&family=Vollkorn+SC:wght@400;700;900&family=Yellowtail&display=swap');
+
+*{  font-family: 'MuseoModerno', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../Pics/pexels-photo-1420701.jpeg)no-repeat left center fixed;
+    background-size:cover; 
+    
+}
+
+        /* Navbar*/
+ 
+
+        .container-fluid{
+            min-height: 10vh;
+            display: flex;
+            align-items: center;
+         }
+         ul li a {
+            font-size: 1.65em;
+            color: black;
+            transition-duration: 2.5s;
+        } 
+        
+        ul li{
+            padding-left: 20px;
+        }
+        
+        nav a:hover, a i:hover{
+            background-color: #F9C300;
+            transition-duration: 1s;
+            color:white;
+        }
+        
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        
+        .navbar-collapse, .navbar-toggler{
+            padding-top: 2em;
+        }
+        .navbar-toggler{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:  rgb(163, 155, 155); 
+            padding: 20px;
+        }
+        
+    /* Navbar*/
+
+    /* Main */
+
+main{
+    margin-top: 100px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+#border{
+    border-bottom: 4px solid white ;
+    width: 40%;
+}
+
+.title{
+    height: 150px;
+    width: 60%;
+    font-size: 45px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background:linear-gradient(45deg, white -10%, transparent 90%);
+      
+    
+    white-space: nowrap;
+} 
+
+@keyframes animate {
+    from {
+      width: 1px; 
+      height: 150px;
+    }
+    to {
+      width: 60%; 
+      height: 150px;
+    } 
+}
+
+.information{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    
+    font-size: 19px;
+    text-align: left;
+}
+
+.skills-id{
+    width:200px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.information-skills{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+            /* Cover*/
+
+.cover{
+    opacity: 1;
+    background-image:white;
+    position:fixed;
+    width:100%;
+    height:1px;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    animation-name: cover1;
+    animation-duration: 1.5s;
+    display: none;
+} 
+
+@keyframes cover1 {
+from {background-color: white;
+width: 100%;
+height: 1px}
+to {background-color: white;
+width:100%;
+height: 100%;}
+}
+
+.cover2{
+opacity: 1;
+background-color:white;
+position:fixed;
+width:100%;
+height:1px;
+top:0px;
+left:0px;
+z-index:1000;
+animation-name: cover2;
+animation-duration: 1.5s;
+display: none;
+
+} 
+
+@keyframes cover2 {
+from {background-color: white;
+width: 100%;
+height: 100%;}
+to {background-color: white;
+width:100%;
+height: 1px;}
+}
+
+
+                        /* Footer*/
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.social-media a{
+    padding: 0 15px;
+    color: grey;
+}
+                        
+.social-media a:hover{
+    color: #F9C300;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+
+@media screen and (max-width: 767px){
+    .title {
+        height: 150px;
+        width: 60%;
+        font-size: 45px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, white -10%, transparent 90%);
+        -webkit-animation: animate 3s;
+        animation: animate 3s;
+        white-space: normal;
+    }
+
+    #skills{
+        flex-direction: column;
+    }
+    .skills-id p{
+        text-align: center;
+    }
+    .footer-content{
+        position: relative;
+        bottom: 0;
+        right: -5px;
+    }
+}

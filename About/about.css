@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=MuseoModerno:wght@100;600&family=Patua+One&family=Permanent+Marker&family=Roboto:wght@500&family=Rubik+Mono+One&family=Rubik:wght@500&family=Ubuntu:wght@500&family=Vollkorn+SC:wght@400;700;900&family=Yellowtail&display=swap');
+
+*{  font-family: 'MuseoModerno', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../Pics/cameraa.jpg)no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+        /* Navbar*/
+
+ .container-fluid{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+ }
+ ul li a {
+    font-size: 1.65em;
+    color: black;
+    transition-duration: 2.5s;
+} 
+
+ul li{
+    padding-left: 20px;
+}
+
+nav a:hover, a i:hover{
+    background-color: #F9C300;
+    transition-duration: 1s;
+    color:white;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar-collapse, .navbar-toggler{
+    padding-top: 2em;
+}
+.navbar-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(163, 155, 155); 
+    padding: 20px;
+}
+
+
+            /*Main*/
+
+
+
+.about-container{
+    min-height: 80vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.about{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0  ;
+}
+.info{
+    background-color: white;
+    opacity: 0.8;
+    padding: 10px 40px;
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+    border-radius: 20px; 
+}
+
+.info h1{
+    margin-bottom: 20px;
+}
+
+.prof-image img{
+    width: 45vh;
+    border-radius: 50%;
+}
+
+.prof-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+     
+            /*Cover*/
+
+.cover{
+opacity: 1;
+background-image:white;
+position:fixed;
+width:100%;
+height:1px;
+bottom:0px;
+left:0px;
+z-index:1000;
+animation-name: cover1;
+animation-duration: 2.0s;
+    
+} 
+
+.cover2{
+opacity: 1;
+background-color:white;
+position:fixed;
+width:100%;
+height:1px;
+bottom:0px;
+left:0px;
+z-index:1000;
+animation-name: cover2;
+animation-duration: 1s;
+display: none;
+
+} 
+
+@keyframes cover2 {
+from {background-color: white;
+width: 100%;
+height: 1px;}
+to {background-color: white;
+width:100%;
+height: 100%;}
+}
+
+@keyframes cover1 {
+from {background-color: white;
+width: 100%;
+height: 100%}
+to {background-color: white;
+width:100%;
+height: 1px;}
+}
+
+            /*Footer*/
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.social-media a{
+    padding: 0 15px;
+    color: grey;
+    
+}
+
+.social-media a:hover{
+    color: #F9C300;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+@media screen and (max-width: 1024px){
+
+    .info {
+        background: white;
+        opacity: 0.8;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 40px 0;  
+    }
+    .content{
+        position: relative;
+        bottom: 0;
+        left: 5px;
+    }
+}
